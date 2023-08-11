@@ -1,6 +1,8 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from './components/navbar'
+import Headbar from './components/headbar'
+import ContentBox from './components/contentBox'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -10,9 +12,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <div className='bg-slate-100 h-full'>
 
+    <div className='bg-gradient-to-b from-yellow-300 from-10% via-white via-20% to-sky-400 to-100% '>
     <Navbar/>
+    <Headbar/>
+    <ContentBox/>
     </div>
   )
 }
