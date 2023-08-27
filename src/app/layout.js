@@ -14,9 +14,13 @@ export default function RootLayout({ children }) {
   return (
 
     <div className='bg-gradient-to-b from-yellow-300 from-10% via-white via-20% to-sky-400 to-100% '>
-    <Navbar/>
-    <Headbar/>
-    <ContentBox/>
+      <div id="navigation" className='md:px-12'>
+        <Navbar />
+      </div>
+      <div id="body" className='md:px-36'>
+        <Headbar />
+        <ContentBox />
+      </div>
     </div>
   )
 }
