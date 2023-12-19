@@ -2,10 +2,9 @@ import Link from "next/link"
 
 export default function Navbar() {
   return (
-
-    <div className="p-10 ">
-      <div className="bg-black relative rounded ">
-        <div id="box-violet" className="grid grid-cols-5  py-5 rounded -translate-x-4 -translate-y-4 bg-violet-700">
+    <div className="mt-auto pt-5 top-0 z-50 md:px-12 sticky">
+      <div className="bg-black rounded ">
+        <div id="box-violet" className="grid grid-cols-5 py-10 rounded -translate-x-4 -translate-y-4 bg-violet-700">
           <div className="col-start-2 col-span-5 flex ">
             <div className="mr-auto">
               <span className="font-sans text-white text-4xl">My portfolio</span>

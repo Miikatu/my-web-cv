@@ -1,6 +1,6 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
-import Navbar from './components/navbar'
+import Navbar from './components/navigation/navbar'
+//import Sidebar from './components/navigation/sidebar'
 import Headbar from './components/headbar'
 import ContentBox from './components/contentBox'
 
@@ -15,13 +15,13 @@ export default function RootLayout() {
     <html lang="en">
       <body>
         <div className='bg-gradient-to-b from-yellow-300 from-10% via-white via-20% to-sky-400 to-100%'>
-          <div id="navigation" className='md:px-12'>
-            <Navbar />
-          </div>
-          <div id="body" className='md:px-36'>
+          <Navbar />
+          { /*<div id="body" className='md:px-36'>
             <Headbar />
-            <ContentBox id="hobbies" />
-          </div>
+            <ContentBox />
+          </div> */}
+          <Headbar />
+          <ContentBox />
         </div>
       </body>
     </html>
