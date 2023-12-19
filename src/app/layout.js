@@ -14,14 +14,12 @@ export default function RootLayout() {
   return (
     <html lang="en">
       <body>
-        <div className='bg-gradient-to-b from-yellow-300 from-10% via-white via-20% to-sky-400 to-100%'>
+        <div className=' bg-gradient-to-b from-yellow-300 from-10% via-white via-20% to-sky-400 to-100%'>
+          <div className='mx-36'>
           <Navbar />
-          { /*<div id="body" className='md:px-36'>
-            <Headbar />
-            <ContentBox />
-          </div> */}
           <Headbar />
           <ContentBox />
+          </div>
         </div>
       </body>
     </html>

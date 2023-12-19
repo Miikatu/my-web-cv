@@ -11,8 +11,8 @@ export default function Navbar() {
               <span className="animate-pulse text-black-100 fol-bold text-2xl">| By Miikatti</span>
             </div>
             <div className="mr-auto my-auto md:space-x-5 lg:space-x-14 ">
-              <Link href="" className="hover:bg-white bg-rounded bg-clip-bprder border-8 border-transparent rounded-2xl">About</Link>
-              <Link href="#contentBox" className="hover:bg-white bg-rounded bg-clip-bprder border-8 border-transparent rounded-2xl">Projects</Link>
+              <a href="/#" className="hover:bg-white bg-rounded bg-clip-bprder border-8 border-transparent rounded-2xl">About</a>
+              <a href="#contentBox" className="hover:bg-white bg-rounded bg-clip-bprder border-8 border-transparent rounded-2xl">Projects</a>
               <Link href="" className="hover:bg-white bg-rounded bg-clip-bprder border-8 border-transparent rounded-2xl">Contacts</Link>
               <Link href="" className="hover:bg-white bg-rounded bg-clip-bprder border-8 border-transparent rounded-2xl">Hobbies</Link>
             </div>
