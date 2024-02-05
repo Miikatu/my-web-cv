@@ -3,22 +3,33 @@ import Navbar from './components/navigation/navbar'
 //import Sidebar from './components/navigation/sidebar'
 import Headbar from './components/headbar'
 import ContentBox from './components/contentBox'
-
+import Welcome from './components/content/welcome'
+import Skills from './components/content/skills'
+import CardContainer from './components/content/cardContainer'
+import LinkContainer from './components/contacts/linkContainer'
 export const metadata = {
   // METATAG API
   // https://nextjs.org/docs/app/api-reference/functions/generate-metadata
   title: 'Miikatti.js'
 }
 
+const programming = ["Java", "Python", "C++", "C"];
+const frontEnd = ["React", "Vue", "Tailwind"];
+const database = ["SQL", "MySQL", "MongoDB"];
+const software = ["Power Bi", "Microsoft 365", "LibreOffice"];
+
+const skills = [programming, frontEnd, database, software]
 export default function RootLayout() {
   return (
-    <html lang="en">
+    <html className="scroll-smooth font-mono" lang="en">
       <body>
-        <div className=' bg-gradient-to-b from-yellow-300 from-10% via-white via-20% to-sky-400 to-100%'>
-          <div className='mx-36'>
-          <Navbar />
-          <Headbar />
-          <ContentBox />
+        <div >
+          <div>
+            <Navbar />
+            <Welcome />
+            <Skills title="Skills" items={skills} />
+            <CardContainer titles={software} />
+            <LinkContainer />
           </div>
         </div>
       </body>
